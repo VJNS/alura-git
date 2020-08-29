@@ -1,0 +1,38 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function pulaLinha() {
+
+		document.write("<br>");
+
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+
+		pulaLinha();
+
+	}
+
+	// Vamos calcular quantas gerações se passaram desde de 1500,
+	// considerando a média de 28 anos para uma nova geração.
+
+	var ano_base = 1500;
+
+	var ano_atual = 2020;
+
+	var media_geracao = 28;
+
+	var total_geracoes = (ano_atual - ano_base) / media_geracao;
+
+	mostra("Ano de Início da Contagem: " + ano_base);
+
+	mostra("Ano Atual: " + ano_atual);
+
+	mostra("Média de Anos para Criação de uma Nova Geração: " + media_geracao);
+
+	mostra("Total de Gerações criadas até Hoje, no Brasil, desde de 1500: " + Math.round(total_geracoes));
+
+</script>
